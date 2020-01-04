@@ -1,0 +1,41 @@
+name: Thingsboard Stub
+version: "0.1"
+author: bachrc <8.bachrc@gmail.com>
+about: It simulates a temperature sensor for your Thingsboard needs !
+args:
+  - hostname:
+      short: h
+      long: hostname
+      value_name: HOSTNAME
+      help: The hostname of the MQTT broker used by Thingsboard
+      takes_value: true
+      required: true
+  - port:
+      short: p
+      long: port
+      value_name: PORT
+      help: The port of the MQTT Broker used by Thingsboard
+      takes_value: true
+      required: true
+  - name:
+      short: n
+      long: name
+      value_name: NAME
+      help: The name of the industruino
+      takes_value: true
+      required: true
+  - secret-token:
+      short: s
+      long: secret
+      value_name: SECRET_TOKEN
+      help: The Secret Token used to authenticate the Industruino
+      takes_value: true
+      required: true
+  - temperature:
+      short: t
+      long: temperature
+      value_name: TEMPERATURE_NAME
+      help: The name of your temperature sensor
+      multiple: true
+      takes_value: true
+      required: true
